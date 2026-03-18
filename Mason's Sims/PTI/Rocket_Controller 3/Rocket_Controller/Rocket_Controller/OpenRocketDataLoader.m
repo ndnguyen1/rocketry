@@ -1,0 +1,79 @@
+% clear all
+% close all
+% flight = GeckoH195oneActuation;
+load('Goanna_new.mat');
+% load('Goanna260224M1315LowWind.mat')
+flight = Goannanew;
+g = -9.80665;
+% Cut flight data to stop at apogee index.
+[boost,coasting,boostandCoasting,rocketApogee] = splitFlightIntoStages(flight); % Boost to apogee.
+%plot(cutFlight.Times,cutFlight.Altitudem)
+%%%% SELECT PHASE OF FLIGHT
+flight = boostandCoasting;
+% Open Rocket Data
+rocketAltitude= table2array(flight(1:end,[1,2]));
+rocketVerticalVelocity = table2array(flight(1:end,[1,3]));
+rocketVerticalAcceleration = table2array(flight(1:end,[1,4]));
+rocketTotalVelocity = table2array(flight(1:end,[1,5]));
+rocketTotalAcceleration = table2array(flight(1:end,[1,6]));
+rocketPositionEastofLaunch = table2array(flight(1:end,[1,7]));
+rocketPositionNorthofLaunch = table2array(flight(1:end,[1,8]));
+rocketLateralDistance = table2array(flight(1:end,[1,9]));
+rocketLateralDirection = table2array(flight(1:end,[1,10]));
+rocketLateralVelocity = table2array(flight(1:end,[1,11]));
+rocketLateralAcceleration = table2array(flight(1:end,[1,12]));
+rocketLatitude = table2array(flight(1:end,[1,13]));
+rocketLongitude = table2array(flight(1:end,[1,14]));
+rocketGravitationalAcceleration = table2array(flight(1:end,[1,15]));
+rocketAngleofAttack = table2array(flight(1:end,[1,16]));
+rocketRollRate = table2array(flight(1:end,[1,17]));
+rocketPitchRate = table2array(flight(1:end,[1,18]));
+rocketYawRate = table2array(flight(1:end,[1,19]));
+rocketMass = table2array(flight(1:end,[1,20]));
+rocketMotorMass = table2array(flight(1:end,[1,21]));
+rocketLongitudinalMomentofInertia = table2array(flight(1:end,[1,22]));
+rocketRotationalMomentofInertia = table2array(flight(1:end,[1,23]));
+rocketCPLocation = table2array(flight(1:end,[1,24]));
+rocketCGLocation = table2array(flight(1:end,[1,25]));
+rocketStabilityMarginCalibers = table2array(flight(1:end,[1,26]));
+rocketMachNumber = table2array(flight(1:end,[1,27]));
+rocketReynoldsNumber = table2array(flight(1:end,[1,28]));
+rocketThrust = table2array(flight(1:end,[1,29]));
+rocketDragForce = table2array(flight(1:end,[1,30]));
+rocketDragCoefficient = table2array(flight(1:end,[1,31]));
+rocketAxialDragCoefficient = table2array(flight(1:end,[1,32]));
+rocketFrictionDragCoefficient = table2array(flight(1:end,[1,33]));
+rocketPressureDragCoefficient = table2array(flight(1:end,[1,34]));
+rocketBaseDragCoefficient = table2array(flight(1:end,[1,35]));
+rocketNormalForceCoefficient = table2array(flight(1:end,[1,36]));
+rocketPitchMomentCoefficient = table2array(flight(1:end,[1,37]));
+rocketYawMomentCoefficient = table2array(flight(1:end,[1,38]));
+rocketSideForceCoefficient = table2array(flight(1:end,[1,39]));
+rocketRollMomentCoefficient = table2array(flight(1:end,[1,40]));
+rocketRollForcingCoefficient = table2array(flight(1:end,[1,41]));
+rocketRollDampingCoefficient = table2array(flight(1:end,[1,42]));
+rocketPitchDampingCoefficient = table2array(flight(1:end,[1,43]));
+rocketCoriolisAcceleration = table2array(flight(1:end,[1,44]));
+rocketReferenceLength = table2array(flight(1:end,[1,45]));
+rocketReferenceArea = table2array(flight(1:end,[1,46]));
+rocketVerticalOrientationZenith = table2array(flight(1:end,[1,47]));
+rocketLateralOrientationAzimuth = table2array(flight(1:end,[1,48]));
+windVelocity = table2array(flight(1:end,[1,49]));
+airTemperature = table2array(flight(1:end,[1,50]));
+airPressure = table2array(flight(1:end,[1,51]));
+speedofSound = table2array(flight(1:end,[1,52]));
+simulationTime = table2array(flight(1:end,[1,53]));
+computationTimes = table2array(flight(1:end,[1,54]));
+% Increased Thrust 40%
+rocketThrustTemp = rocketThrust*1.1;
+rthrustTime  = table2array(flight(1:end,1));
+rthrust40PercentMore = rocketThrustTemp(1:end,2);
+rocketThrust40pMore = [rthrustTime];
+rocketThrust40pMore = [rocketThrust40pMore,rthrust40PercentMore];
+
+
+
+% Goanna Configuration 
+maxAirbrakeArea = 0.02681;
+% rocketMass = rocketMass/1000;
+% rocketReferenceArea = rocketReferenceArea/10000;

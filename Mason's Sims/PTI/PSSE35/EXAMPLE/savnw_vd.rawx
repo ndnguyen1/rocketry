@@ -1,0 +1,26 @@
+// sample voltage droop control record for savnw case
+// use the rawx to define QV characteristic curve A for voltage droop control and assign the droop control to the generator at bus 3018
+{
+    "network":{
+	
+	        "caseid": {
+            "fields":["ic"],
+            "data":[1]
+             },
+			 
+	        "generator":{
+            "fields":["ibus", "machid", "droopname:string"], 
+            "data":[
+				[3018,    "1",  "A"]   ]
+			},
+			
+            "Droop":{
+            "fields":["DroopName:string","Status:int", "Regbus:int","Qmax:real", "Qdb:real", "Qmin:real", 
+			          "Vlow:real", "Vhigh:real", "Vdblow:real", "Vdbhigh:real"], 
+            "data":[
+                 ["A", 1, 0, 100.0, 10, -50.0,  0.94, 1.04, 0.97,1.01]  ]
+
+            }	
+
+	}
+}

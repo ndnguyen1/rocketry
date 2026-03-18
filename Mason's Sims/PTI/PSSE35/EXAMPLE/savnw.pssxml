@@ -1,0 +1,26 @@
+<Scenario RootPath="C:\Program Files\PTI\PSSE35\Example\" CreationDate="WED, MAY 18 2011  13:54" CreatedBy="" ChangeDate="WED, MAY 18 2011  13:59" ChangedBy="" Name="savnw.pssxml" Version="2.1.1" PSSEVersion="35.3.0" StartupGroup="savnw">
+   <Group Name="savnw">
+      <File Name="C:\Program Files\PTI\PSSE35\35.3\EXAMPLE\savnw.sav" Type="SAV" Load="1" />
+      <File Name="C:\Program Files\PTI\PSSE35\35.3\EXAMPLE\savcnv.sav" Type="SAV" Load="0" />
+      <File Name="C:\Program Files\PTI\PSSE35\35.3\EXAMPLE\savnw.snp" Type="SNP" Load="2" />
+      <File Name="C:\Program Files\PTI\PSSE35\35.3\EXAMPLE\savnw.raw" Type="RAW" Load="0" />
+      <File Name="C:\Program Files\PTI\PSSE35\35.3\EXAMPLE\savnw.dyr" Type="DYR" Load="0" />
+      <File Name="C:\Program Files\PTI\PSSE35\35.3\EXAMPLE\savnw.seq" Type="SEQ" Load="0" />
+      <File Name="C:\Program Files\PTI\PSSE35\35.3\EXAMPLE\savnw.sub" Type="SUB" Load="4" />
+      <File Name="C:\Program Files\PTI\PSSE35\35.3\EXAMPLE\savnw.mon" Type="MON" Load="5" />
+      <File Name="C:\Program Files\PTI\PSSE35\35.3\EXAMPLE\savnw.con" Type="CON" Load="6" />
+      <File Name="C:\Program Files\PTI\PSSE35\35.3\EXAMPLE\savnw.sld" Type="SLD" Load="3" />
+   </Group>                                 
+   <Group Name="savcnv">                    
+      <File Name="C:\Program Files\PTI\PSSE35\35.3\EXAMPLE\savnw.sav" Type="SAV" Load="0" />
+      <File Name="C:\Program Files\PTI\PSSE35\35.3\EXAMPLE\savcnv.sav" Type="SAV" Load="1" />
+      <File Name="C:\Program Files\PTI\PSSE35\35.3\EXAMPLE\savnw.snp" Type="SNP" Load="2" />
+      <File Name="C:\Program Files\PTI\PSSE35\35.3\EXAMPLE\savnw.raw" Type="RAW" Load="0" />
+      <File Name="C:\Program Files\PTI\PSSE35\35.3\EXAMPLE\savnw.dyr" Type="DYR" Load="0" />
+      <File Name="C:\Program Files\PTI\PSSE35\35.3\EXAMPLE\savnw.seq" Type="SEQ" Load="0" />
+      <File Name="C:\Program Files\PTI\PSSE35\35.3\EXAMPLE\savnw.sub" Type="SUB" Load="4" />
+      <File Name="C:\Program Files\PTI\PSSE35\35.3\EXAMPLE\savnw.mon" Type="MON" Load="5" />
+      <File Name="C:\Program Files\PTI\PSSE35\35.3\EXAMPLE\savnw.con" Type="CON" Load="6" />
+      <File Name="C:\Program Files\PTI\PSSE35\35.3\EXAMPLE\savnw.sld" Type="SLD" Load="3" />
+   </Group>
+</Scenario>

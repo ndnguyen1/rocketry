@@ -1,0 +1,23 @@
+# This file contains Two Terminal and Multi Terminal DC configuration data.
+# The name from this data used to name Two Terminal and Multi Terminal DC in PSSE.
+# This is done to have consistent names when dcdata is created from projects or base case.
+
+# The line with first character as hash (#) or forward slash (/)is treated as comment line.
+# The configuration data line must contain three keywords:
+#       name, dcbuses and converter_dcbuses
+
+# Following shows example of how their values are specified:
+#    name='dcname1'               (<-- add single or double quote if name has space)
+#    dcbuses=1,2,101,102          (<-- separate bus numbers by comma)
+#    converter_dcbuses=101,102    (<-- separate bus numbers by comma)
+
+# Note: PSSE requires Two Terminal DC names and Multi Terminal DC names to be unique.
+#       The name can be upto 12 characters long.
+
+name='romulus' dcbuses=1,2,101,102 converter_dcbuses=101,102
+
+name='remus' dcbuses=21, 22, 121, 122 converter_dcbuses=121, 122
+
+name='overlord' dcbuses=3, 4, 7, 8, 9 converter_dcbuses=7, 8, 9
+
+name='venus' dcbuses=5, 6, 11, 12, 13 converter_dcbuses=11, 12, 13

@@ -1,0 +1,71 @@
+1.LOG			! Name of the process LOG file
+1.CNH			! Auxiliary file for the conversion process
+ 100			! MVA base for the PSS™E file
+ 10			! number of voltage levels (and the following lines in this file)
+0,   750.0		! single character numerical code, nominal voltage level in kV
+1,   380.0
+2,   220.0
+3,   150.0
+4,   120.0
+5,   110.0
+6,   70.0
+7,   27.0
+8,   330.0
+9,   500.0
+ 28			! Number of countries (and the following lines in this file)
+S,SCHWEIZ,1,1		! "S" - Country node code (the first character in the node name)
+I,ITALY,2,2		! "ITALY" - Country name (up to 8 characters)
+F,FRANCE,3,3		! "3" - Country number in the list (the first number after the country name)
+O,AUSTRIA,4,4		! "4" - Control Area number - to which the country belongs (the second number)
+D,GERMANY,5,5
+P,PORTUGAL,6,6
+L,SLOVENIA,7,7
+H,CROATIA,8,8
+B,BELGIUM,9,9
+C,CZECH,10,10
+J,JSERB,11,11
+R,ROMANIA,12,12
+V,BULGARIA,13,13
+K,DANMARK,14,14
+Z,POLAND,15,15
+M,HUNGARY,16,16
+N,NEDERLA,17,17
+G,HELLAS,18,18
+0,MONTENEG,19,19
+E,ESPANA,20,20
+W,BOSNIA,21,21
+Y,JMACE,22,22
+Q,SLOVAKIA,23,23
+A,ALBANIA,24,24
+U,UKRAINE,25,25
+3,BELORUSS,26,15	! "26" - Country number in the list
+2,MOROCCO,27,20		! "20" - Control Area number
+X,FICT,99,99
+ 25			! Number of Control Areas
+PT,6          		! Control Area name, Control Area number
+ES,20
+FR,3
+CH,1
+IT,2
+SI,7
+HR,8
+BA,21
+ME,19
+RS,11
+AL,24
+MK,22
+GR,18
+AT,4
+BE,9
+DE,5
+DK,14
+HU,16
+NL,17
+PL,15
+BG,13
+RO,12
+SK,23
+CZ,10
+UA,25
+ 0
+ 2000			!For node numbering, skipping the first 2000

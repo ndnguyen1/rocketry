@@ -1,0 +1,48 @@
+version 30
+TIME
+RSTR,savnw.snp
+LOFL
+CASE,savcnv.sav
+FACT
+TYSL
+RTRN
+STRT
+rex2.out
+
+RUN
+0 2 2
+ALTR
+0
+1
+0
+1
+154
+1
+,,-2E10
+0
+-1
+-1
+RUN
+.1 20 1
+ALTR
+0
+1
+0
+1
+154
+1
+,,200
+0
+-1
+0
+3
+153,154
+1
+0
+0
+0
+-1
+TIME
+RUN
+5 120 3
+TIME

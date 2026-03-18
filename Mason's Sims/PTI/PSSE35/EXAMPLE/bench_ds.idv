@@ -1,0 +1,69 @@
+menu,off
+lofl
+text Restore standard PTI benchmark case
+time
+case bench
+gnet
+21 28 167 204 396 421 429 430 444 456 498 507 522 525
+562 642 766 775 807 831 835 1277 1278 1318 1321
+1399 1512 1514
+0
+fnsl
+0
+cong
+conl,all
+100,0
+0,100
+1
+fact
+tysl
+rtrn
+dyre
+bench.dyr
+benchconec
+benchconet
+
+benchcompile
+BAT_CHSB 0 1     -1     -1     -1 1  1 0
+BAT_CHSB 0 1     -1     -1     -1 1  5 0
+strt
+out1
+bench
+run
+0,2,2
+altr
+0
+1
+0
+1
+303
+1
+,,-2e10
+-1
+-1
+run
+.1,12,1
+altr
+0
+1
+0
+1
+303
+1
+,,0
+-1
+0
+3
+303,310
+1
+0
+-1
+303,310,2
+1
+0
+-1
+-1
+run
+5,60,5
+time
+stop

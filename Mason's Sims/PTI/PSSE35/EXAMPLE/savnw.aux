@@ -1,0 +1,35 @@
+RemedialAction (Name, Skip, ArmingCriteria, ArmingStatus, Memo, DataMaintainerAssign)
+{
+"TRPTEST1" "NO" "Overload" "ALWAYS" "DecreaseLoad 153" , ""
+"TRPTEST2" "NO" "Overload" "ALWAYS" "DecreaseLoad 153&154" , ""
+}
+
+RemedialActionElement (RemedialAction, Object, Action, Criteria, CriteriaStatus, Persistent, Comment, TimeDelay)
+{
+"TRPTEST1"  "load 153 '1 ' " "CHANGEBY '-100' MW" "OVERLOAD"  "postCHECK" "NO" "reduce load by -100" 0.000000
+"TRPTEST2"  "load 153 '1 ' " "CHANGEBY '-100' MW" "OVERLOAD"  "postCHECK" "NO" "reduce load by -100" 0.000000
+"TRPTEST2"  "load 154 '1 ' " "CHANGEBY '-200' MW" "OVERLOAD"  "postCHECK" "NO" "reduce load by -200" 0.000000
+}
+
+ModelCondition (Name,        Object,  FilterObjectType, FilterLogic,   EvaluateInRef, DisableIfTrueInRef, Memo,                   DataMaintainerAssign)
+{
+"LINE 101_151 OVERLOAD"      "branch 101 151 '1 ' 1" "branch"          "or"          "no"           "no"               "RAS1" ""
+"LINE 152_153 OVERLOAD"      "branch 152 153 '1 ' 1" "branch"          "or"          "no"           "no"               "RAS2" ""
+}
+
+ModelConditionCondition (ModelCondition, CondNum, ObjectField,   ConditionType, Value, OtherValue, Absolute, ObjectFieldEvalRef)
+{
+"LINE 101_151 OVERLOAD"                  1        "MWMAX"       ">"            "600"  ""          "YES"     ""
+"LINE 152_153 OVERLOAD"                  1        "MWMAX"       ">"            "700"  ""          "YES"     ""
+}
+
+MODELFILTER (Name, Logic, Memo )
+{
+ "OVERLOAD"    "and"  ""   
+}
+
+MODELFILTERCONDITION (Modelfilter, CondNum, Criteria, Logic, TimeDelay )
+{
+"OVERLOAD"   1  "LINE 101_151 OVERLOAD"    ""   0.000000 
+"OVERLOAD"   2  "LINE 152_153 OVERLOAD"    ""   0.000000 
+}

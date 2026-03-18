@@ -1,0 +1,65 @@
+ CHAN
+ 
+ 1
+   101 '1 ' 'ANG1NUC-A                       '
+   211 '1 ' 'ANG1HYDRO                       '
+   206 '1 ' 'ANG1URBGEN                      '
+  3011 '1 ' 'ANG1MINE                        '
+  3018 '1 ' 'ANG1CATDOG                      '
+ 0
+ 2
+   101 '1 ' ' P 1NUC-A                       '
+   211 '1 ' ' P 1HYDRO                       '
+   206 '1 ' ' P 1URBGEN                      '
+  3011 '1 ' ' P 1MINE                        '
+  3018 '1 ' ' P 1CATDOG                      '
+ 0
+ 3
+   101 '1 ' ' Q 1NUC-A                       '
+   211 '1 ' ' Q 1HYDRO                       '
+   206 '1 ' ' Q 1URBGEN                      '
+  3011 '1 ' ' Q 1MINE                        '
+  3018 '1 ' ' Q 1CATDOG                      '
+ 0
+ 4
+   101 '1 ' 'ET 1NUC-A                       '
+   211 '1 ' 'ET 1HYDRO                       '
+   206 '1 ' 'ET 1URBGEN                      '
+  3011 '1 ' 'ET 1MINE                        '
+  3018 '1 ' 'ET 1CATDOG                      '
+ 0
+ 5
+   101 '1 ' 'EFD1NUC-A                       '
+   211 '1 ' 'EFD1HYDRO                       '
+   206 '1 ' 'EFD1URBGEN                      '
+  3011 '1 ' 'EFD1MINE                        '
+  3018 '1 ' 'EFD1CATDOG                      '
+ 0
+ 7
+   101 '1 ' 'SPD1NUC-A                       '
+   211 '1 ' 'SPD1HYDRO                       '
+   206 '1 ' 'SPD1URBGEN                      '
+  3011 '1 ' 'SPD1MINE                        '
+  3018 '1 ' 'SPD1CATDOG                      '
+ 0
+ 6
+   101 '1 ' 'PM 1NUC-A                       '
+   211 '1 ' 'PM 1HYDRO                       '
+   206 '1 ' 'PM 1URBGEN                      '
+ 0
+ 13
+   201 '  V-HYDRO                       '
+   205 '  V-SUB230                      '
+ 0
+ 17
+   201   204 '1 ' 'M  201-  204                    '
+   205   154 '1 ' 'M  205-  154                    '
+ 0
+ 18
+   201   204 '1 ' 'R  201-  204                    '
+ 'X  201-  204                    '
+   205   154 '1 ' 'R  205-  154                    '
+ 'X  205-  154                    '
+ 0
+ 0
+ @END

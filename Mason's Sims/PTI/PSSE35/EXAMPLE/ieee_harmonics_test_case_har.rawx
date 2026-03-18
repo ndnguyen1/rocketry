@@ -1,0 +1,112 @@
+{
+    "general":{"version":"35.4"}, 
+    "harmonics":{
+        "impchr":{
+            "fields":["name"], 
+            "data":[]
+        }, 
+        "impchrpts":{
+            "fields":["name", "hn", "rn_r0", "ln_l0", "cn_c0"], 
+            "data":[]
+        }, 
+        "vltsrc":{
+            "fields":["name", "angoptn"], 
+            "data":[]
+        }, 
+        "vltsrcpts":{
+            "fields":["name", "hn", "vn_v0", "angn"], 
+            "data":[]
+        }, 
+        "cursrc":{
+            "fields":["name", "curtyp", "angoptn"], 
+            "data":[
+                ["HVDC_PU", 0, 0], 
+                ["TCR_PU", 0, 0]
+            ]
+        }, 
+        "cursrcpts":{
+            "fields":["name", "hn", "in_i0", "angn"], 
+            "data":[
+                ["HVDC_PU", 1.000000, 100.0000, -49.56000], 
+                ["HVDC_PU", 5.000000, 19.41000, -67.77000], 
+                ["HVDC_PU", 7.000000, 13.09000, 11.90000], 
+                ["HVDC_PU", 11.00000, 7.580000, -7.130000], 
+                ["HVDC_PU", 13.00000, 5.860000, 68.57000], 
+                ["HVDC_PU", 17.00000, 3.790000, 46.53000], 
+                ["HVDC_PU", 19.00000, 3.290000, 116.4600], 
+                ["HVDC_PU", 23.00000, 2.260000, 87.47000], 
+                ["HVDC_PU", 25.00000, 2.410000, 159.3200], 
+                ["HVDC_PU", 29.00000, 1.930000, 126.7900], 
+                ["TCR_PU", 1.000000, 100.0000, 46.92000], 
+                ["TCR_PU", 5.000000, 7.020000, -124.4000], 
+                ["TCR_PU", 7.000000, 2.500000, -29.87000], 
+                ["TCR_PU", 11.00000, 1.360000, -23.75000], 
+                ["TCR_PU", 13.00000, 0.7500000, 71.50000], 
+                ["TCR_PU", 17.00000, 0.6200000, 77.12000], 
+                ["TCR_PU", 19.00000, 0.3200000, 173.4300], 
+                ["TCR_PU", 23.00000, 0.4300000, 178.0200], 
+                ["TCR_PU", 25.00000, 0.1300000, -83.45000], 
+                ["TCR_PU", 29.00000, 0.4000000, -80.45000]
+            ]
+        }, 
+        "load":{
+            "fields":["ibus", "id", "hstate", "htype", "hquality", "hireg", "hpk", "imptblname", "vlttblname", "curtblname"], 
+            "data":[
+                [4, "1", 1, 7, 1.000000, 0.000000, 0.000000, "", "", ""], 
+                [5, "1", 1, 7, 1.000000, 0.000000, 0.000000, "", "", ""], 
+                [8, "1", 1, 7, 1.000000, 0.000000, 0.000000, "", "", "TCR_PU"], 
+                [9, "1", 1, 7, 1.000000, 0.000000, 0.000000, "", "", ""], 
+                [10, "1", 1, 7, 1.000000, 0.000000, 0.000000, "", "", ""], 
+                [11, "1", 1, 7, 1.000000, 0.000000, 0.000000, "", "", ""], 
+                [12, "1", 1, 7, 1.000000, 0.000000, 0.000000, "", "", ""], 
+                [13, "1", 1, 7, 1.000000, 0.000000, 0.000000, "", "", ""], 
+                [14, "1", 1, 7, 1.000000, 0.000000, 0.000000, "", "", ""], 
+                [301, "1", 1, 7, 1.000000, 0.000000, 0.000000, "", "", "HVDC_PU"], 
+                [302, "1", 1, 7, 1.000000, 0.000000, 0.000000, "", "", "HVDC_PU"]
+            ]
+        }, 
+        "generator":{
+            "fields":["ibus", "id", "hstate", "htype", "hquality", "imptblname", "vlttblname", "curtblname"], 
+            "data":[]
+        }, 
+        "acline":{
+            "fields":["ibus", "jbus", "ckt", "hstate", "htype", "hquality", "imptblname"], 
+            "data":[]
+        }, 
+        "transformer":{
+            "fields":["ibus", "jbus", "kbus", "ckt", "hstate", "htype", "hquality", "imptblname", "curtblname"], 
+            "data":[]
+        }, 
+        "twotermdc":{
+            "fields":["name", "acbus", "hstate", "vlttblname", "curtblname"], 
+            "data":[]
+        }, 
+        "vscdc":{
+            "fields":["name", "acbus", "hstate", "vlttblname", "curtblname"], 
+            "data":[]
+        }, 
+        "ntermdc":{
+            "fields":["name", "acbus", "hstate", "vlttblname", "curtblname"], 
+            "data":[]
+        }, 
+        "facts":{
+            "fields":["name", "sendbus", "termbus", "hstate", "htype", "hquality", "imptblname", "vlttblname", "curtblname"], 
+            "data":[]
+        }, 
+        "indmach":{
+            "fields":["ibus", "id", "hstate", "htype", "hquality", "imptblname", "vlttblname", "curtblname"], 
+            "data":[]
+        }, 
+        "pfilter":{
+            "fields":["ibus", "id", "hstate", "czy", "cfg", "rg", "xb1", "xb2"], 
+            "data":[
+                [3, "F1", 1, 4, 0, 0.1360000E-02, 0.2772000E-01, 0.2491600], 
+                [3, "F2", 1, 4, 0, 0.1360000E-02, 0.2772000E-01, 0.2491600], 
+                [8, "11", 1, 4, 0, 0.5251000, 0.2751500, 0.3015000E-01], 
+                [8, "F2", 1, 4, 0, 0.5251000, 8.312330, 0.3015000E-01], 
+                [8, "F5", 1, 4, 0, 0.5251000, 1.326350, 0.3015000E-01], 
+                [8, "F7", 1, 4, 0, 0.5251000, 0.6730700, 0.3015000E-01]
+            ]
+        }
+    }
+}

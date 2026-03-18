@@ -1,0 +1,19 @@
+menu,off      /* Force menu to correct status
+text Restore standard PTI large benchmark case
+case bench2
+text Modify tolerance to guarantee we get
+text 20 interations in activity fnsl
+chng
+7
+ 
+1
+,.001
+q
+0
+text Start large benchmark timing
+time init
+fnsl fs
+ 
+time
+text End large timing test
+@end
